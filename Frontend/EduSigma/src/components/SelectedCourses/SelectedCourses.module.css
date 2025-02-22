@@ -1,0 +1,77 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.courseItem {
+  display: flex;
+  align-items: stretch;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #1a73e8;
+  transition: all 0.2s ease;
+}
+
+.courseContent {
+  flex: 1;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.courseItem:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.courseCode {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.courseDate {
+  font-size: 0.8rem;
+  color: #5f6368;
+}
+
+.courseDescription {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3c4043;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+  color: #5f6368;
+  font-style: italic;
+}
+
+.removeButton {
+  width: 36px;
+  border: none;
+  background: none;
+  color: #dc3545;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+.removeButton:hover {
+  background: #dc3545;
+  color: white;
+} 
